@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+   
+    <title>Egadgets Store | Ecommerce Website</title>
+
+</head>
+
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" >
+                    <img src="egadgets logo.jpg" alt="CoolGadgets Logo" width="120"class="rounded">
+                </a>
+                <form class="search-bar-form" action="#" method="GET">
+                    <input class="search-bar" type="text" placeholder="Search...">
+                    <button class="search-btn bg-warning" type="submit">Search</button>
+                </form>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li ><a >Home &nbsp;</a></li>
+                        <li ><a >Products &nbsp;</a></li>
+                        <li ><a href="login.html"style="text-decoration: none ;color:black;">Login &nbsp;</a></li>
+                        <li ><a href="#contact" style="text-decoration: none ;color:black;">Contact</a></li>
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner-section">
+        <a> <img src="background banner.jpg" alt="CoolGadgets Logo" width="00">
+        </a>
+        </div>
+
+    <!--- Banner -->
+    <section class="container-fluid">
+        <div CLASS="row" >
+            <div class="banner1">
+                <div>
+                    <h1>Discover the Future With CoolGadgets!</h1>
+                    <p class="mb-4"><em>Where Innovation Meets Implementation.</em></p>
+                    <a class="btn btn-light btn-lg">Shop Now </a>
+                </div>
+            </div>
+            <div class="col-md-6 banner-image"></div>
+        </div>
+    </section>
+
+   
+    
+    <!--- Featured Products -->
+    <div id="fproduct">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product-1.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Virtual Reality Glasses</h5>
+                        <p class="card-text">Rs.29900.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product-2.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Facial Recognition Home Hub</h5>
+                        <p class="card-text">Rs.14900.00</p>
+                        <form action="cart.html" method="GET">
+                
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product-3.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">3D Printing Pen</h5>
+                        <p class="card-text">Rs.4500.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product-4.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Delivery Drone</h5>
+                        <p class="card-text">Rs.19900.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!--- New Product -->
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <img src="new-product.jpg" class="img-fluid" alt="New Product">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <p>Our Newest Product Offer</p>
+                    <h1>Smart Ring</h1>
+                    <small>Track your fitness journey effortlessly with the Smart Ring, a sleek wearable that combines style and health monitoring right on your fingertip.</small>
+                    <br>
+                    <form action="cart.html" method="GET">
+                        <input type="hidden" name="product" value="Smart Ring">
+                        <input type="hidden" name="price" value="199.00">
+                        <input type="hidden" name="quantity" value="1">
+                        <input type="submit" class="btn btn-warning" value="Add to Cart">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="text-center">Contact Us</h2>
+            </div>
+            <div class="col-md-8 mx-auto border rounded p-4 shadow-sm">
+                <!-- Assuming you might want a form for the users to fill out -->
+                <form action="/users" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Name</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Message</label>
+                        <input type="text" name="comment" id="comment" rows="3" placeholder="Your message"></input>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!--- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="egadgets logo.jpg" alt="CoolGadgets Logo" class="mb-2 rounded-circle" width="100">
+                    <p>Discover the Future <br> With CoolGadgets!</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Products</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Facebook</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Instagram</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">&copy; Copyright 2023 - CoolGadgets Store</div>
+        </div>
+    </footer>
+</body>
+</html>
